@@ -1,12 +1,15 @@
 import styled from 'styled-components'
 
 export const HeroWrapper = styled.div`
+
 display:flex;
 align-items:center;
 justify-content: space-around;
 width:100%;
 height:100vh;
 `;
+
+
 export const InformationsWrapper = styled.div`
 width:1000px;
 height:500px;
@@ -31,22 +34,25 @@ h1{
 p{
     font-size:1.2em;
 }
-button{
-    position:relative;
-    cursor:pointer;
-    border-radius:5px;
-    padding:1em 2em;
-    background-color: #b45241;
-    color: #fff;
-    font-weight:bold;
-    font-size:15px;
-    margin-top:0.5em;
-    border:none;
-    overflow:hidden;
-    z-index:5;
-}
-}
-button::before{
+
+`
+
+export const Button = styled.div`
+position:relative;
+cursor:pointer;
+border-radius:5px;
+padding:1em 2em;
+background-color: #b45241;
+color: #fff;
+font-weight:bold;
+font-size:15px;
+margin-top:0.5em;
+border:none;
+overflow:hidden;
+z-index:5;
+max-width:177px;
+
+&::before{
     content: '' ;
     position:absolute;
     top:0;
@@ -59,9 +65,10 @@ button::before{
     z-index:-1;
  
 }
-button:hover::before{
+&:hover::before{
     transform: translateX(0);
 
 }
 `
+
 

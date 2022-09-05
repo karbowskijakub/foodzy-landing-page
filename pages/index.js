@@ -1,6 +1,9 @@
 import Head from 'next/head'
 import React from 'react'
 import HeroContainer from '../components/HeroContainer/HeroContainer'
+import ServiceComponent from '../components/ServiceComponent/ServiceComponent'
+import AboutContainer from '../components/AboutContainer/AboutContainer'
+import DownloadContainer from '../components/DownloadContainer/DownloadContainer'
 export default function Home() {
   return (
   <>     
@@ -10,6 +13,9 @@ export default function Home() {
   <link rel="icon" href="/favicon.ico" />
 </Head>
 <HeroContainer/>
+<ServiceComponent/>
+<AboutContainer/>
+<DownloadContainer/>
 </>
  
 
