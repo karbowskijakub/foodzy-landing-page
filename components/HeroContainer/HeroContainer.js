@@ -3,12 +3,13 @@ import { HeroWrapper, InformationsWrapper } from './HeroContainer.styles'
 import React from 'react'
 import { motion } from 'framer-motion'
 import { Button } from './HeroContainer.styles'
+import Link from 'next/link'
 
 const HeroContainer = () => {
 	return (
 		<>
 			<HeroWrapper>
-				<Image src={require('../../assets/background.png')} layout='fill'  quality={100} />
+				<Image src={require('../../assets/background.png')} layout='fill' quality={100} />
 				<Image src={require('../../assets/onBg.png')} alt='logo' layout='fill' objectFit='cover' quality={100} />
 
 				<motion.div
@@ -35,9 +36,12 @@ const HeroContainer = () => {
 						<h2>Get Your Food In</h2>
 						<h1>Foodzy</h1>
 						<p>
-						Foodzy is a Polish quick-commerce start-up founded in Warsaw in 2022. It is an on-demand courier service that purchases, picks up, and delivers products ordered through its mobile app.
+							Foodzy is a Polish quick-commerce start-up founded in Warsaw in 2022. It is an on-demand courier service
+							that purchases, picks up, and delivers products ordered through its mobile app.
 						</p>
-						<Button >Download App</Button>
+						<Link href='#download' passHref>
+							<Button>Download App</Button>
+						</Link>
 					</InformationsWrapper>
 				</motion.div>
 			</HeroWrapper>

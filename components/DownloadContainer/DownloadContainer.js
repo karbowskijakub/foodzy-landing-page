@@ -1,10 +1,12 @@
 import React from 'react'
 import { DownloadWrapper,DownloadInfo,Icons } from './DownloadContainer.styles'
 import Image from 'next/image'
-import { ImageStyle } from './DownloadContainer.styles'
+import { ImageStyle } from './DownloadContainer.styles';
+import { AddedIcon } from './DownloadContainer.styles';
 const DownloadContainer = () => {
   return (
-    <DownloadWrapper>
+    <DownloadWrapper id="download">
+      <AddedIcon/>
     <DownloadInfo>
 <h2>Get Food With Foodzy</h2>
 <h2>Download The App</h2>
